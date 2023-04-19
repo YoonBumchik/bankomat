@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="банкомат2.css">
+    <title>Банкомат1</title>
+</head>
+<body background="https://sun9-24.userapi.com/impg/6OKvTRXnvu5G0u4Dtc4vS71yvp17ufbF8cIP3A/BZ0VwvzGHMw.jpg?size=1280x905&quality=95&sign=82ea360fd017e4b19f5a848e49241f81&c_uniq_tag=j0PRyY_98gmGZ1jW_MRPdf8SP4oDm2hMvU-zuNH1kwk&type=album"> 
+
+    <table id="bankomat" align="center"><td><p align="center" style="color: white;">Банкомат</p></td></table>
+
+    <table style="border-radius: 24px;" bgcolor="#9ca611"><td><p style="color: white;">Выберите желаемое действие:</p></td></table>
+    <table id="super">
+        <tr>
+            <td><button id="OplataMobSwyasi">оплата мобильной связи</button></td>
+            <td><button id="SnyatiyeNalichnich">снятие наличных</button></td>
+            <td><button id="PopolneniyeScheta" onclick="Moneyin1">пополнение счета</button></td>
+        </tr> 
+        <tr> 
+            <td><button id="ProsmotrBalansa">просмотр баланса пользователя</button></td>
+            <td><button id="IzmenenieParolya">изменение пароля</button></td>
+            <td><button id="KorrectParol">корректность пароля</button></td>
+        </tr>
+    </table>
+
+    <table style="border:8px solid #9ca611; border-radius:10px;" align="right" bgcolor="#eef25f"><td><p align="center" ><a href="банкомат.html">Выход</a></p></td></table>
+    
+    <script>
+        alert ("Добро пожаловать!")
+
+        class Bankomat {
+    constructor(OplataMobSwyasi, SnyatiyeNalichnich, PopolneniyeScheta, ProsmotrBalansa, IzmenenieParolya) {
+        this.OplataMobSwyasi = OplataMobSwyasi;
+        this.SnyatiyeNalichnich = SnyatiyeNalichnich;
+        this.PopolneniyeScheta = PopolneniyeScheta;
+        this.ProsmotrBalansa = ProsmotrBalansa;
+        this.IzmenenieParolya = IzmenenieParolya;
+        this.KorrectParol = KorrectParol;
+    }
+}
+        </script>
+</body>
+</html>
