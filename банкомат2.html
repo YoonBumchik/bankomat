@@ -44,13 +44,15 @@
         let u = new User()
 
         class Bank {
+
+            //оплата мобильной связи
   paymobile() {
     {
                 alert("Сумма оплаты мобильной связи 220 рублей");
                 if(oplata == false){
                     if(summC >= 220){
                         summC -= 220;
-                        alert(`Спасибо! Мы получили оплату.На вашем балансе теперь  ${summC}  рублей`)
+                        alert(`Мобильная связь оплачена.На вашем балансе теперь  ${summC}  рублей`)
                         oplata = true;
                     }
                     else{
@@ -58,10 +60,12 @@
                     }
                 }
                 else{
-                    alert("Мы получили вашу оплату!")
+                    alert("Мобильная связь оплачена.")
                 }
-  }   //оплата мобильной связи
+  }   
   }
+
+  //пополнение счета
    cash(){
                 let summ = prompt("Введите сумму, которую хотите снять");
                 if(summC >= summ){
@@ -77,16 +81,15 @@
           let summ = prompt("Введите сумму пополнения");
                 summC += Number(summ);
                 alert(`Вы пополнили баланс на ${summ} рублей.На вашей карте ${summC}`)
-         } //пополнение счета
+         } 
 
+         //просмотр баланса
  balance () {
 
   alert(`На вашей карте ${summC.toFixed(1)} рублей  `)
- }  //просмотр баланса
+ }  
 
-
-
-
+// ввести пароль
  enterTHEpassword(){
  
                 let ncard = prompt("Введите свою карту");
@@ -96,7 +99,7 @@
                         let password = prompt("Введите пароль к карте");
                         if(password == u.parol[i]){
                         let name = 0;
-                            switch(u.ncard[i]){
+                        switch(u.ncard[i]){
                                 case 65487598 :
                                     break;
                                 case 12345678 :
@@ -105,8 +108,8 @@
                                 case 87654321 :
                                     name = 2;
                                     break;
-                            } 
-                            alert(`Вы зашли в свой аккаунт ${u.name[name]}.`)
+                        }
+                            alert(`Вы вошли в свой аккаунт ${u.name[name]}.`)
                             z=false
                             ncard = i;
                             summС = u.money[i];
@@ -120,9 +123,8 @@
                     alert("Неверная карта или пароль");
                 }       
               }
-                // ввести пароль
 
-
+//перевод денег
   transfMoney() { 
     let ncard = prompt("На какую карту перевести?");
                 for(let i = 0; i <= u.ncard.length; i++){
@@ -136,7 +138,7 @@
                 }
                 }
             }
-            //перевод денег
+            
         </script>
 </body>
 </html>
